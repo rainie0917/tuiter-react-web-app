@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    font-family: Helvetica Neue;
+    border-color: rgb(47, 51, 54);
+}
+
+body {
+    color: white;
+    font-size: 16px;
+}
+
+.wd-bottom-border {
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-tuit-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-tuit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.wd-h1 {
+    margin-left: 16px;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.wd-handle {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    margin-left: 16px;
+    margin-bottom: 12px;
+}
+
+.wd-blue-dots {
+    color: rgb(29,161,242);
+    margin-right:16px;
+    font-size: 20px;
+    align-self: center;
+}
+
+.wd-bookmarks-content {
+    display: flex;
+    margin-top: 12px;
+    margin-left:16px;
+}
+
+.profile-pic img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-right-content{
+    margin-left: 12px;
+}
+
+.wd-author-name {
+    display: flex;
+    font-size: 15px;
+}
+
+.wd-author-handle {
+    color: rgb(110, 118, 125);
+}
+
+.wd-dots {
+    color: rgb(110, 118, 125);
+    margin-right: 16px;
+    font-size: 15px;
+    align-self: center;
+}
+
+.wd-post-main-content {
+    font-size: 15px;
+    color: white;
+    max-width: 506px;
+    margin-bottom: 12px;
+}
+
+.wd-post {
+    border: 1px solid rgb(47, 51, 54);
+    max-width: 506px;
+    margin-top:12px;
+    border-radius: 20px;
+}
+
+.wd-post-image {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-right: 16px;
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-all-around-padding-12px {
+    padding: 12px;
+}
+
+.wd-post-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-post-detail {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-icons{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: -90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wd-icon-text {
+    color: rgb(110, 118, 125);
+    margin-left: 12px;
+}
+
+.wd-like-icon-text {
+    color: red;
+}
+
+.wd-like-number {
+    margin-left: 12px;
+}

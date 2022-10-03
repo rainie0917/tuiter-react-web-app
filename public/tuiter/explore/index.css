@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    font-family: Helvetica Neue;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-search-row {
+    display: flex;
+}
+
+.wd-search-row > * {
+    padding: 5px;
+    margin: 2px 2px 2px 16px;
+}
+
+.wd-search-bar {
+    background-color: rgb(47, 51, 54);
+    color: white;
+    width: 100%;
+    padding-left: 16px;
+    border-radius: 50px;
+    display:inline;
+}
+
+.wd-explore-settings {
+    margin-right: 12px;
+}
+
+.wd-border {
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-hyperlinks {
+    display: flex;
+    overflow: auto;
+}
+
+.wd-hyperlinks > * {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+    border: none;
+}
+
+.wd-selected {
+    border-bottom: 3px solid rgb(29,161,242);
+    color: rgb(29,161,242);
+    margin-left: 16px;
+    margin-right:16px;
+    padding: 16px 0px 0px 0px;
+}
+
+.wd-suggested-posts {
+    display: flex;
+    margin-left: 16px;
+    flex-direction: column;
+}
+
+.wd-tuit-content {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-tuit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 5px 5px 0px;
+}
+
+.wd-topic {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    padding: 1px 0;
+}
+
+.wd-title {
+    color: white;
+    font-size: 15px;
+    padding: 1px 0;
+}
+
+.wd-number-of-tweets {
+    color: rgb(110, 118, 125);
+    padding: 1px 0;
+    font-size: 13px;
+}
+
+.wd--white-dots {
+    color: white;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.wd-dots {
+    color: rgb(110, 118, 125);
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.wd-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wd-round-icon {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
