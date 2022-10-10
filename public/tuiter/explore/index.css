@@ -109,6 +109,17 @@
     font-weight: bold;
 }
 
+.btn-primary.override-1 {
+    background-color: #1DA1F2;
+}
+
+.btn-primary.override-2 {
+    background-color: transparent;
+    border-color: transparent;
+    color: #1DA1F2;
+    font-size: 15px;
+}
+
 .wd-gray-text {
     color: #686A6C;
     font-size: 15px;
