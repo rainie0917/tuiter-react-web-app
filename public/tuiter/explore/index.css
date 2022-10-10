@@ -1,122 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: black;
-    font-family: Helvetica Neue;
-    border-color: rgb(47, 51, 54);
-}
-
-.wd-bottom-border {
-    border-bottom: 1px solid rgb(47, 51, 54);
-}
-
-.wd-top-border {
-    border-top: 10px solid rgb(47, 51, 54);
-}
-
-.wd-search-row {
-    display: flex;
-}
-
-.wd-search-row > * {
-    padding: 5px;
-    margin: 2px 2px 2px 16px;
-}
-
-.wd-search-bar {
-    background-color: darkgray;
-    color: white;
-    width: 100%;
-    padding-left: 16px;
-    border-radius: 50px;
-    margin-right: 12px;
-}
-
-.wd-explore-settings {
-    margin-right: 12px;
-}
-
-.wd-hyperlinks {
-    display: flex;
-    overflow: auto;
-}
-
-.wd-hyperlinks > * {
-    font-size: 15px;
-    color: rgb(110, 118, 125);
-    padding: 16px;
-    border: none;
-}
-
-.wd-selected {
-    color: rgb(29,161,242);
-    border-bottom: 3px solid rgb(29,161,242);
-    margin-left: 16px;
-    margin-right:16px;
-    padding: 16px 0px 0px 0px;
-}
-
-.wd-suggested-posts {
-    display: flex;
-    margin-left: 16px;
-    flex-direction: column;
-}
-
-.wd-tuit-content {
-    display: flex;
-    flex-direction: row;
-}
-
-.wd-tuit {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 5px 5px 5px 0px;
-}
-
-.wd-topic {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-    padding: 1px 0;
-}
-
-.wd-title {
-    color: white;
-    font-size: 15px;
-    padding: 1px 0;
-}
-
-.wd-number-of-tweets {
-    color: rgb(110, 118, 125);
-    padding: 1px 0;
-    font-size: 13px;
-}
-
-.wd--white-dots {
-    color: white;
-    margin-right: 16px;
-    font-size: 15px;
-}
-
-.wd-dots {
-    color: rgb(110, 118, 125);
-    margin-right: 16px;
-    font-size: 15px;
-}
-
 .wd-image {
     width: 100px;
     height: 100px;
     border-radius: 20%;
-    margin-right: 16px;
-    margin-top: 16px;
-    margin-bottom: 16px;
 }
 
-.wd-round-icon {
-    height: 13px;
-    width: 13px;
-    border-radius: 50%;
+.bg-color.override {
+    background-color: black;
 }
 
+.active-color.override {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-text-color.override {
+    color: lightgray;
+}
+
+.input-group.override {
+    background-color: rgb(22,24,28);
+    border-color: rgb(22,24,28);
+}
+
+.wd-search-bar.override {
+    background-color: rgb(22,24,28);
+    border-color: rgb(22,24,28);
+}
+
+.fa-search.override {
+    color: #686A6C;
+    margin-left: 15px;
+}
+
+.fa-cog.override {
+    color: #686A6C;
+    margin-right: 12px;
+}
+
+.wd-border-color {
+    border: 2px solid rgb(22,24,28);
+}
+
+.nav-tabs.override-bottom {
+    border-bottom-color: rgb(22,24,28);
+}
+
+.nav-link.override {
+    color: #686A6C;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.wd-highlight {
+    border-bottom: 5px solid rgb(29, 161, 242);
+}
+
+.list-group-item.override {
+    color: lightgray;
+    background-color: black;
+}
+
+.text-secondary.override {
+    font-size: 13px;
+}
+
+.wd-title {
+    font-size: 15px;
+}
+
+.list-group.override {
+    background-color: rgb(22,24,28);
+    border-radius: 20px;
+}
+
+.list-group-item.override-bg-text {
+    color: lightgray;
+    background-color: rgb(22,24,28);
+}
+
+.btn-primary.override {
+    background-color: lightgray;
+    border-color: lightgray;
+    color: black;
+    font-weight: bold;
+}
+
+.wd-gray-text {
+    color: #686A6C;
+    font-size: 15px;
+}
