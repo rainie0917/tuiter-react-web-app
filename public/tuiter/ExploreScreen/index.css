@@ -1,0 +1,111 @@
+.bg-black {
+    background-color: black;
+}
+
+.wd-text-color.override {
+    color: #EFF6FA;
+}
+
+.btn-primary.override {
+    background-color: #4F9ED1;
+    color: #EFF6FA;
+    border-color: #4F9ED1;
+}
+
+.wd-searchbar {
+  position: absolute;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.fa-search {
+    color: gray;
+}
+
+.fa-cog {
+    color: #4F9ED1;
+}
+
+.wd-dark-gray {
+    color: #222222;
+}
+
+.input-group-text.override {
+    border: hidden;
+    background-color: transparent;
+    text-align: left;
+    width: 89%;
+    outline: 0;
+}
+
+.nav-tabs.override {
+    border-bottom: 1px solid #222222;
+}
+
+.nav-link.override {
+    color: white;
+}
+
+.nav-item.override {
+    background-color: #4F9ED1;
+}
+
+.wd-gray-text {
+    color: #444444;
+}
+
+
+.wd-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
+
+.list-group-item.override {
+    background-color: #222222;
+}
+
+.list-group-item.override3 {
+    background-color: #4F9ED1;
+}
+
+.list-group-item.override2 {
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-topic {
+    color: #444444;
+    font-size: 15px;
+}
+
+.wd-title {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd-title2 {
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;;
+}
+
+.wd-userName {
+    color: white;
+}
+
+.wd-time {
+    color: #444444;
+    font-size: 15px;
+}
+
+.wd-tweets {
+    color: #444444;
+    font-size: 15px;
+}
+
+.fa-circle {
+    color: white;
+}
