@@ -50,3 +50,13 @@
     height: 100px;
     border-radius: 20%;
 }
+
+.wd-post-border {
+    border-radius: 30px;
+}
+
+.wd-post-image {
+    height: 264px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
