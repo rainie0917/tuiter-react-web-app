@@ -1,0 +1,52 @@
+.bg-black {
+    background-color: black;
+}
+
+.wd-bg-dark-gray {
+    background-color: #222222;
+}
+
+.wd-dark-gray {
+    color: #222222;
+}
+
+.wd-gray-text {
+    color: #444444;
+}
+
+.wd-topic {
+    color: #444444;
+    font-size: 15px;
+}
+
+.wd-title {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd-title2 {
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;;
+}
+
+.wd-userName {
+    color: white;
+}
+
+.wd-time {
+    color: #444444;
+    font-size: 15px;
+}
+
+.wd-tweets {
+    color: #444444;
+    font-size: 15px;
+}
+
+.wd-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
