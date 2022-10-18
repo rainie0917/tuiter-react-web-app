@@ -23,4 +23,12 @@
  .wd-bottom-4 {
     bottom: 4px;
  }
- 
+
+ .wd-rounded-top {
+   border-top-left-radius: 10%;
+   border-top-right-radius: 10%;
+ }
+
+ .wd-rounded {
+   border-radius: 10%;
+ }
