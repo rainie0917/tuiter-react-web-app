@@ -29,7 +29,7 @@ const PostItem = (
                     <div><label className="fw-bolder">{post.userName}</label> <i className="bi bi-patch-check-fill text-primary"></i> <label className="text-muted">@{post.handle} - {post.time}</label>
                         <span className="float-end text-muted"><i className="bi bi-three-dots text-muted"></i></span>
                     </div>
-                    <div>{post.title} <a href="#">{post.titleLink}</a></div>
+                    <div>{post.title} <a href="trib.al/nx2Gfaq">{post.titleLink}</a></div>
                     <div className="mt-2 border wd-rounded">
                         <div className="rounded-3 row"><img className="wd-rounded-top" src={`/images/${post.image}`} alt=""/></div>
                         <div className="ms-3 me-3">
@@ -38,10 +38,10 @@ const PostItem = (
                         </div>
                     </div>
                     <div class="d-flex justify-content-between me-5 mt-2">
-                        <div><a href="#"><i className="bi bi-chat me-2 text-muted"></i></a><span className="ms-2 fw-thin text-muted">{post.comment}</span></div> 
-                        <div><a href="#"><i className="bi bi-repeat me-2 text-muted"></i></a><span className="ms-2 fw-thin text-muted">{post.retweet}</span></div>                   
-                        <div><a href="#"><i className="bi bi-heart me-2 text-muted"></i></a><span className="ms-2 fw-thin text-muted">{post.like}</span></div> 
-                        <a href="#"><i className="bi bi-upload me-2 text-muted"></i></a>                                                      
+                        <div><button className="border-0 bg-white"> <i className="bi bi-chat me-2 text-muted"></i></button><span className="ms-2 fw-thin text-muted">{post.comment}</span></div> 
+                        <div><button className="border-0 bg-white"> <i className="bi bi-repeat me-2 text-muted"></i></button><span className="ms-2 fw-thin text-muted">{post.retweet}</span></div>                   
+                        <div><button className="border-0 bg-white"> <i className="bi bi-heart me-2 text-muted"></i></button><span className="ms-2 fw-thin text-muted">{post.like}</span></div> 
+                        <button className="border-0 bg-white"> <i className="bi bi-upload me-2 text-muted"></i></button>                                                      
                     </div>
                 </div>
             </div>
