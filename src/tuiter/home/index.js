@@ -18,7 +18,7 @@ const HomeComponent = () => {
      </div>
      <ul className="nav nav-pills mb-2">
       <li className="nav-item">
-        <button className="nav-link actice">For You</button>
+        <button className="nav-link active">For You</button>
        </li>
        <li className="nav-item">
         <button className="nav-link" href="#">Trending</button>
