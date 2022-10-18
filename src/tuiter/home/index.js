@@ -17,20 +17,20 @@ const HomeComponent = () => {
        </div>
      </div>
      <ul className="nav nav-pills mb-2">
-       <li className="nav-item">
-         <a className="nav-link active" href="#">For You</a>
+      <li className="nav-item">
+        <button className="nav-link actice">For You</button>
        </li>
        <li className="nav-item">
-         <a className="nav-link" href="#">Trending</a>
+        <button className="nav-link" href="#">Trending</button>
        </li>
        <li className="nav-item">
-         <a className="nav-link" href="#">News</a>
+         <button className="nav-link" href="#">News</button>
        </li>
        <li className="nav-item">
-         <a className="nav-link" href="#">Sports</a>
+         <button className="nav-link" href="#">Sports</button>
        </li>
        <li className="nav-item">
-        <a className="nav-link d-none d-md-block" href="#">Entertainment</a>
+        <button className="nav-link d-none d-md-block" href="#">Entertainment</button>
        </li>
      </ul>
      <PostList/>
