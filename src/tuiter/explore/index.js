@@ -2,7 +2,7 @@ import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
 const ExploreComponent = () => {
- return(
+  return (
    <>
      <div className="row">
        <div className="col-11 position-relative">
@@ -18,19 +18,19 @@ const ExploreComponent = () => {
      </div>
      <ul className="nav nav-pills mb-2">
        <li className="nav-item">
-         <a className="nav-link active" href="#">For You</a>
+        <button className="nav-link actice">For You</button>
        </li>
        <li className="nav-item">
-         <a className="nav-link" href="#">Trending</a>
+        <button className="nav-link" href="#">Trending</button>
        </li>
        <li className="nav-item">
-         <a className="nav-link" href="#">News</a>
+         <button className="nav-link" href="#">News</button>
        </li>
        <li className="nav-item">
-         <a className="nav-link" href="#">Sports</a>
+         <button className="nav-link" href="#">Sports</button>
        </li>
        <li className="nav-item">
-        <a className="nav-link d-none d-md-block" href="#">Entertainment</a>
+        <button className="nav-link d-none d-md-block" href="#">Entertainment</button>
        </li>
      </ul>
      <div className="position-relative mb-2">
