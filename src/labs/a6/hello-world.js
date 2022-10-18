@@ -1,4 +1,4 @@
-import Nav from "/Users/rainiezhao/2022/fall/webdev/tuiter-react-web-app/src/nav.js";
+import Nav from "./nav.js";
 function HelloWorld() {
  return (
    <div>
