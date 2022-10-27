@@ -1,8 +1,8 @@
 import {createSlice} from "@reduxjs/toolkit";
-import postsSummary from './posts-summary.json';
+import postsSummary from '../data/post-summary.json';
 
 const postsSummarySlice = createSlice({
-    name: 'postSummary',
+    name: 'postsSummary',
     initialState: postsSummary
 });
 

@@ -3,9 +3,9 @@ import tuits from '../data/tuits.json';
 
 const currentUser = {
     "userName": "NASA",
-    "handle": "nasa",
-    "avatarIcon": "nasa.png",
-};
+    "handle": "@nasa",
+    "image": "nasa.png",
+};   
 
 const templateTuit = {
     ...currentUser,
@@ -32,7 +32,8 @@ const tuitSlice = createSlice({
             const index = state.findIndex(tuit =>tuit._id === action.payload);
             state.splice(index, 1);
         }
-    }
+    }       
+
 });
 
 export const {createTuit, deleteTuit} = tuitSlice.actions;

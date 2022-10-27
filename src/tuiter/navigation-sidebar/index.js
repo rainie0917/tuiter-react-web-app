@@ -9,7 +9,7 @@ const NavigationSidebar = () => {
     return (
     <div>
         <div className="list-group">
-            <span className="list-group-item d-flex"><i className="bi bi-twitter pe-2"></i><span className="d-none d-xl-block">Tuiter</span></span>
+            <span className="list-group-item d-flex"><span className="d-none d-xl-block">Tuiter</span></span>
             <Link to="/tuiter/home" className={`list-group-item d-flex
                             ${active === 'home'?'active':''}`}>
                 <i className="bi bi-house pe-2"></i><span className="d-none d-xl-block">Home</span>
@@ -19,7 +19,7 @@ const NavigationSidebar = () => {
                 <i className="bi bi-hash pe-2"></i><span className="d-none d-xl-block">Explore</span>
             </Link>
             <Link to="/" className="list-group-item d-flex">
-            <i className="bi bi-box pe-2"></i><span className="d-none d-xl-block">Labs</span>
+            <i className="bi bi-asterisk pe-2"></i><span className="d-none d-xl-block">Labs</span>
             </Link>
             <Link to="/tuiter/notifications" className={`list-group-item d-flex
                             ${active === 'notifications'?'active':''}`}>
@@ -46,7 +46,7 @@ const NavigationSidebar = () => {
                 <i className="bi bi-three-dots pe-2"></i><span className="d-none d-xl-block">More</span>
             </Link>
         </div>
-        <button className="mt-2 bg-primary text-white rounded-pill w-100 border-0">Tweet</button>
+        <button className="mt-2 bg-primary text-white rounded-pill w-100 border-0"> Tweet</button>
     </div>
     );
 };

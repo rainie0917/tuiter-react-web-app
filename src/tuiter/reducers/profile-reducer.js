@@ -6,11 +6,11 @@ const profile = {
     handle: 'rainiezhao',
     profilePicture: 'profile-pic.png',
     bannerPicture: 'banner.webp',
-    bio: 'Foodie, Software Engineer, Music Lover',
+    bio: 'Foodie, Software Engineer',
     website: 'www.rainiezhao.com',
     location: 'Seattle, USA',
-    dateOfBirth : '01/01/2022',
-    dateJoined: '09/2022',
+    dateOfBirth : '01/01/1994',
+    dateJoined: '09/2021',
     followingCount: 1234,
     followersCount: 5678
 }
