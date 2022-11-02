@@ -17,7 +17,7 @@ const EditProfileComponent = () => {
     const [dateOfBirth, setDateOfBirth] = useState(birthdayData[2] + "-" + birthdayData[0] + '-' + birthdayData[1]);
 
     const updateProfileHandler = () => {
-        dispatch(updateProfile());
+        dispatch(updateProfile(name, bio, location, website, dateOfBirth));
         navigate('/tuiter/profile');
     }
     return (

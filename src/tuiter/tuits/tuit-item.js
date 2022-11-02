@@ -37,10 +37,10 @@ const TuitItem = (
           </div>
           <div>{post.tuit}</div>
           <div className="d-flex justify-content-between me-5 mt-2">
-            <div><a href="tuit-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{post.replies}</span></div> 
-            <div><a href="tuit-list.js"><i className="bi bi-repeat"></i></a><span className="ms-2">{post.retuits}</span></div>                   
-            <div><a href="tuit-list.js">{post.liked? <i className="bi bi-heart-fill text-danger"></i>: <i className="bi bi-heart"></i>}</a><span className="ms-2">{post.likes}</span></div> 
-            <a href="tuit-list.js"><i className="bi bi-share"></i></a>                              
+            <div><a href="tuits-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{post.replies}</span></div> 
+            <div><a href="tuits-list.js"><i className="bi bi-repeat"></i></a><span className="ms-2">{post.retuits}</span></div>                   
+            <div><a href="tuits-list.js">{post.liked? <i className="bi bi-heart-fill text-danger"></i>: <i className="bi bi-heart"></i>}</a><span className="ms-2">{post.likes}</span></div> 
+            <a href="tuits-list.js"><i className="bi bi-share"></i></a>                              
           </div>
         </div>
       </div>
