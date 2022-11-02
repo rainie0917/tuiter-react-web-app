@@ -26,7 +26,7 @@ const profileSlice = createSlice({
             const bio = updatedProfile.bio;
             const location = updatedProfile.location;
             const website = updatedProfile.website;
-            const [year, month, day] = updatedProfile.birthday.split('-');
+            const [year, month, day] = updatedProfile.dateOfBirth.split('-');
             const dateOfBirth = [month, day, year].join('/');
             return {...state, firstName, lastName, bio, location, website, dateOfBirth}
         }

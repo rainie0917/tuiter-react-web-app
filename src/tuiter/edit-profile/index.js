@@ -6,17 +6,18 @@ import {updateProfile} from "../reducers/profile-reducer";
 
 const EditProfileComponent = () => {
     const profile = useSelector(state => state.profile);
-    const navigate = useNavigate();
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const [name, setName] = useState(profile.firstName + ' ' + profile.lastName);
     const [bio, setBio] = useState(profile.bio);
     const [location, setLocation] = useState(profile.location);
     const [website, setWebsite] = useState(profile.website);
-    const [dateOfBirth, setDateOfBirth] = useState(profile.dateOfBirth);
+    const birthdayData = profile.dateOfBirth.split('/')
+    const [dateOfBirth, setDateOfBirth] = useState(birthdayData[2] + "-" + birthdayData[0] + '-' + birthdayData[1]);
 
     const updateProfileHandler = () => {
-        dispatch(updateProfile({name, bio, location, website, dateOfBirth}));
+        dispatch(updateProfile());
         navigate('/tuiter/profile');
     }
     return (
@@ -26,7 +27,7 @@ const EditProfileComponent = () => {
             </Link>
             <span className="text-black fw-bold fs-4 ms-2">Edit Profile</span>
             <button className="btn btn-dark rounded-pill float-end" onClick={updateProfileHandler}>Save</button>
-
+            
             <div className="position-relative mt-2 mb-5">
                 <img className="w-100" style={{"opacity": "0.6"}} src="/images/banner.webp" alt="..."/>
                 <i className="position-absolute bi bi-camera fs-4 ps-2 pe-2 pt-1 pb-1 rounded-circle text-white"
