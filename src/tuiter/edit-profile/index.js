@@ -1,24 +1,21 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import {useNavigate} from "react-router";
 import {useDispatch, useSelector} from "react-redux";
 import {updateProfile} from "../reducers/profile-reducer";
 
 const EditProfileComponent = () => {
-    const profile = useSelector(state => state.profile);
+    const initialProfile = useSelector(state => state.profile);
+    const [profile, setProfile] = useState(initialProfile)
     const dispatch = useDispatch();
-    const navigate = useNavigate();
 
-    const [name, setName] = useState(profile.firstName + ' ' + profile.lastName);
-    const [bio, setBio] = useState(profile.bio);
-    const [location, setLocation] = useState(profile.location);
-    const [website, setWebsite] = useState(profile.website);
-    const birthdayData = profile.dateOfBirth.split('/')
-    const [dateOfBirth, setDateOfBirth] = useState(birthdayData[2] + "-" + birthdayData[0] + '-' + birthdayData[1]);
-
-    const updateProfileHandler = () => {
-        dispatch(updateProfile(name, bio, location, website, dateOfBirth));
-        navigate('/tuiter/profile');
+    const updateProfileHandler = (event) => {
+        dispatch(updateProfile({
+          ...profile,
+          name:profile.name,
+          bio: profile.bio,
+          location: profile.location,
+          website: profile.website,
+          dateOfBirth: profile.dateOfBirth}));
     }
     return (
         <>
@@ -26,8 +23,9 @@ const EditProfileComponent = () => {
                 <i className="bi bi-x h3 text-black ms-2 me-2"></i>
             </Link>
             <span className="text-black fw-bold fs-4 ms-2">Edit Profile</span>
-            <button className="btn btn-dark rounded-pill float-end" onClick={updateProfileHandler}>Save</button>
-            
+            <Link to="/tuiter/profile" className="btn btn-dark rounded-pill float-end"
+                    onClick={(event) => updateProfileHandler(event)}>Save</Link>
+
             <div className="position-relative mt-2 mb-5">
                 <img className="w-100" style={{"opacity": "0.6"}} src="/images/banner.webp" alt="..."/>
                 <i className="position-absolute bi bi-camera fs-4 ps-2 pe-2 pt-1 pb-1 rounded-circle text-white"
@@ -50,31 +48,33 @@ const EditProfileComponent = () => {
                 <div className="form-group pt-4">
                     <label htmlFor="inputName">Name</label>
                     <input type="text" className="form-control" id="inputName" placeholder="Name"
-                           value={name} onChange={(e) => {
-                        setName(e.target.value)
-                    }}/>
+                           onChange={(e) => setProfile({...profile, name: e.target.value})}
+                           value={profile.name}/>
                 </div>
                 <div className="form-group pt-4">
                     <label htmlFor="inputBio">Bio</label>
                     <textarea className="form-control" id="inputBio" placeholder="Bio"
-                              value={bio} onChange={(e) => setBio(e.target.value)}
-                    />
+                              onChange={(e) => setProfile({...profile, bio: e.target.value})}
+                              value={profile.bio}/>
                 </div>
                 <div className="form-group pt-4">
                     <label htmlFor="inputLocation">Location</label>
                     <input type="text" className="form-control" id="inputLocation" placeholder="Location"
-                           value={location} onChange={(e) => setLocation(e.target.value)}
+                           onChange={(e) => setProfile({...profile, location: e.target.value})}
+                           value={profile.location}
                     />
                 </div>
                 <div className="form-group pt-4">
                     <input type="text" className="form-control" id="inputWebsite" placeholder="Website"
-                           value={website} onChange={(e) => setWebsite(e.target.value)}
+                           onChange={(e) => setProfile({...profile, website: e.target.value})}
+                           value={profile.website}
                     />
                 </div>
                 <div className="form-group pt-4">
                     <label htmlFor="inputBirthday">Birth date</label>
-                    <input type="date" className="form-control" id="inputBirthday" placeholder="Location"
-                           value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)}
+                    <input type="date" className="form-control" id="inputBirthday" placeholder="DOB"
+                           onChange={(e) => setProfile({...profile, dateOfBirth: e.target.value})}
+                           value={profile.dateOfBirth}
                     />
                 </div>
             </form>
