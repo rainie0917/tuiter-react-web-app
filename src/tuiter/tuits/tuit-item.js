@@ -1,10 +1,10 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {updateTuitThunk, deleteTuitThunk} from "../../services/tuits-thunks";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
  {
-   post = {
+   tuit = {
     "_id": 345, 
     "topic": "Energy",  
     "userName": "Tesla",
@@ -15,6 +15,7 @@ const TuitItem = (
     "replies": 115,
     "retuits": 189,
     "likes": 2236,
+    "dislikes": 0,
     "handle": "tesla",
     "tuit": "Tesla Immersive, our multichannel audio upmixer, enables stereo content to be remixed in real time, optimizing the listening experience for our vehicles specifically"}
  }
@@ -28,26 +29,15 @@ const TuitItem = (
     <li className="list-group-item">
       <div className="row">
         <div className="col-auto">
-          <img width={50} className="float-end rounded-circle" src={`/images/${post.image}`} alt=""/>
+          <img width={50} className="float-end rounded-circle" src={`/images/${tuit.image}`} alt=""/>
         </div>
         <div className="col-10">
           <div>
-            <label className="fw-bolder">{post.userName}</label> <i className="bi bi-patch-check-fill text-primary"></i> <label className="text-muted">@{post.handle} · {post.time}</label>
-            <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(post._id)}></i>
+            <label className="fw-bolder">{tuit.userName}</label> <i className="bi bi-patch-check-fill text-primary"></i> <label className="text-muted">@{tuit.handle} · {tuit.time}</label>
+            <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}></i>
           </div>
-          <div>{post.tuit}</div>
-          <div className="d-flex justify-content-between me-5 mt-2">
-            <div><a href="tuits-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{post.replies}</span></div> 
-            <div><a href="tuits-list.js"><i className="bi bi-repeat"></i></a><span className="ms-2">{post.retuits}</span></div>
-            <div>
-              Likes: {post.likes}
-              <i onClick={() => dispatch(updateTuitThunk({
-                ...post,
-                likes: post.likes + 1
-                }))} className="bi bi-heart-fill me-2 text-danger"></i>
-            </div>
-            <a href="tuits-list.js"><i className="bi bi-share"></i></a>                              
-          </div>
+          <div>{tuit.tuit}</div>
+          <TuitStats tuit={tuit}/>
         </div>
       </div>
     </li>
