@@ -3,15 +3,33 @@ import {createTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
- let [whatsHappening, setWhatsHappening] = useState('');
- const dispatch = useDispatch();
+  let [whatsHappening, setWhatsHappening] = useState('');
+
+  const dispatch = useDispatch();
+
+  const currentUser = {
+    "userName": "NASA",
+    "handle": "nasa",
+    "avatarIcon": "nasa.png",
+  };
+
+  const templateTuit = {
+    ...currentUser,
+    "topic": "Space",
+    "time": "2h",
+    "replies": 0,
+    "retuits": 0,
+  }
+
  const tuitClickHandler = () => {
    console.log(whatsHappening);
    const newTuit = {
+    ...templateTuit,
     tuit: whatsHappening
    }
    dispatch(createTuitThunk(newTuit));
  }
+
  return (
    <div className="row">
      <div className="col-auto">

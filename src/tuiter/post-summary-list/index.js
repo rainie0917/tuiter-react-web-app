@@ -4,7 +4,7 @@ import {useSelector} from "react-redux";
 import {findTuitsThunk} from "../../services/tuits-thunks";
 
 const PostSummaryList = () => {
-  const postsArray = useSelector(state => state.tuitsData.tuits)
+  const postsArray = useSelector(state => state.tuitsData)
   return(
     <ul className="list-group">
       {
