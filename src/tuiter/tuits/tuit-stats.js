@@ -29,6 +29,7 @@ const TuitStats = (
                     :
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...tuit,
+                        likes: tuit.likes
                     }))} className="bi bi-heart me-2"></i>}
             </div>
             <div>
@@ -41,6 +42,7 @@ const TuitStats = (
                     :
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...tuit,
+                        dislikes: tuit.dislikes
                     }))} className="bi bi-hand-thumbs-down me-2"></i>}
             </div>
             <a href="tuits-list.js"><i className="bi bi-share"></i></a>                              
