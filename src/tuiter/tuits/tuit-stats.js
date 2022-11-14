@@ -9,6 +9,7 @@ const TuitStats = (
             "replies": 115,
             "retuits": 189,
             "likes": 2236,
+            "disliked": false,
             "dislikes": 0,
         }
     }) => {
@@ -19,18 +20,32 @@ const TuitStats = (
             <div><a href="tuits-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{tuit.replies}</span></div> 
             <div><a href="tuits-list.js"><i className="bi bi-repeat"></i></a><span className="ms-2">{tuit.retuits}</span></div>
             <div>
-              Likes: {tuit.likes}
-              <i onClick={() => dispatch(updateTuitThunk({
-                ...tuit,
-                likes: tuit.likes + 1
-                }))} className="bi bi-heart-fill me-2 text-danger"></i>
+                {tuit.liked ?
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        liked: true,
+                        likes: tuit.likes + 1
+                    }))} className="bi bi-heart-fill me-2 text-danger"></i> 
+                    :
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        liked: false,
+                        likes: tuit.likes - 1
+                    }))} className="bi bi-heart-fill me-2"></i>}
             </div>
             <div>
-              Dislikes: {tuit.dislikes}
-              <i onClick={() => dispatch(updateTuitThunk({
-                ...tuit,
-                dislikes: tuit.dislikes + 1
-                }))} className="bi bi-hand-thumbs-down"></i>
+                {tuit.disliked ?
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        disliked: true,
+                        dislikes: tuit.dislikes + 1
+                    }))} className="bi bi-hand-thumbs-down-fill"></i> 
+                    :
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        disliked: false,
+                        dislikes: tuit.dislikes - 1
+                    }))} className="bi bi-hand-thumbs-down"></i>}
             </div>
             <a href="tuits-list.js"><i className="bi bi-share"></i></a>                              
         </div>
