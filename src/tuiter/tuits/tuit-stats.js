@@ -20,15 +20,20 @@ const TuitStats = (
             <div><a href="tuits-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{tuit.replies}</span></div> 
             <div><a href="tuits-list.js"><i className="bi bi-repeat"></i></a><span className="ms-2">{tuit.retuits}</span></div>
             <div>
-                {tuit.liked? 
+                if (liked) {
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        liked: false,
+                        likes: tuit.likes - 1
+                    }))} className="bi bi-heart-fill me-2 text-danger"></i> 
+                } else {
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...tuit,
                         liked: true,
                         likes: tuit.likes + 1
-                    }))} className="bi bi-heart-fill me-2 text-danger"></i> 
-                    : 
-                    <i className="bi bi-heart me-2"></i>}
-                    <span className="ms-2">{tuit.likes}</span>
+                }))} className="bi bi-heart-fill me-2 text-danger"></i>
+                } 
+                <span className="ms-2">{tuit.likes}</span>
             </div>
             <div>
                 {tuit.disliked ?
