@@ -7,9 +7,9 @@ const WhatsHappening = () => {
   const dispatch = useDispatch();
   
   const currentUser = {
-    "userName": "Rainie",
-    "handle": "rainie",
-    "avatarIcon": "../../images/profile-pic.png",
+    "userName": "NASA",
+    "handle": "nasa",
+    "avatarIcon": "../../images/nasa.png",
   };
 
   const templateTuit = {
@@ -36,7 +36,7 @@ const WhatsHappening = () => {
  return (
    <div className="row">
      <div className="col-auto">
-       <img src="../../images/profile-pic.png" width={60} alt=""/>
+       <img src="../../images/nasa.png" width={60} alt=""/>
      </div>
      <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"
