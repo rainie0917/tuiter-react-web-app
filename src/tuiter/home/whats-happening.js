@@ -4,9 +4,8 @@ import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
-
   const dispatch = useDispatch();
-
+  
   const currentUser = {
     "userName": "NASA",
     "handle": "nasa",
@@ -23,7 +22,6 @@ const WhatsHappening = () => {
     "disliked": false,
     "likes": 0,
     "dislikes": 0,
-
   }
 
  const tuitClickHandler = () => {
