@@ -13,8 +13,9 @@
     "disliked": false,
     "dislikes": 0,
     "handle": "spacex",
-    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"},
-   { 
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+    },
+    { 
     "_id": 345, 
     "topic": "Energy",  
     "userName": "Tesla",
@@ -28,7 +29,8 @@
     "likes": 2236,
     "dislikes": 0,
     "handle": "tesla",
-    "tuit": "Tesla Immersive, our multichannel audio upmixer, enables stereo content to be remixed in real time, optimizing the listening experience for our vehicles specifically"},
+    "tuit": "Tesla Immersive, our multichannel audio upmixer, enables stereo content to be remixed in real time, optimizing the listening experience for our vehicles specifically"
+    },
     {
     "_id": 456, 
     "topic": "ReactJS",   
@@ -43,5 +45,6 @@
     "likes": 48,
     "dislikes": 0,
     "handle": "reactjs",
-    "tuit": "React will keep working on the client just like it does today, but this will be a new lever available to everyone to build faster apps – by reducing bytes sent and streaming data as soon as it's ready."}
+    "tuit": "React will keep working on the client just like it does today, but this will be a new lever available to everyone to build faster apps – by reducing bytes sent and streaming data as soon as it's ready."
+    }
 ]

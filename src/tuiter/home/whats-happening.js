@@ -24,8 +24,8 @@ const WhatsHappening = () => {
  const tuitClickHandler = () => {
    console.log(whatsHappening);
    const newTuit = {
-    ...templateTuit,
-    tuit: whatsHappening
+    tuit: whatsHappening,
+    ...templateTuit
    }
    dispatch(createTuitThunk(newTuit));
  }
