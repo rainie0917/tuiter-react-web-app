@@ -9,7 +9,7 @@ const WhatsHappening = () => {
   const currentUser = {
     "userName": "NASA",
     "handle": "nasa",
-    "avatarIcon": "nasa.png",
+    "avatarIcon": "../../images/nasa.png",
   };
 
   const templateTuit = {
