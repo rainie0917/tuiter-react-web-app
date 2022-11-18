@@ -9,7 +9,7 @@ const WhatsHappening = () => {
   const currentUser = {
     "userName": "NASA",
     "handle": "nasa",
-    "avatarIcon": "../../images/nasa.png",
+    "image": "../../images/nasa.png",
   };
 
   const templateTuit = {
@@ -24,7 +24,8 @@ const WhatsHappening = () => {
     "dislikes": 0,
   }
 
- const tuitClickHandler = (whatsHappening) => {
+ const tuitClickHandler = () => {
+   console.log(whatsHappening);
    const newTuit = {
     tuit: whatsHappening,
     ...templateTuit
