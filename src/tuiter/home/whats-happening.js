@@ -25,7 +25,6 @@ const WhatsHappening = () => {
   }
 
  const tuitClickHandler = (whatsHappening) => {
-   console.log(whatsHappening);
    const newTuit = {
     tuit: whatsHappening,
     ...templateTuit
