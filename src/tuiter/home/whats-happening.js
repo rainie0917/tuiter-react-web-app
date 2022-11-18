@@ -24,7 +24,7 @@ const WhatsHappening = () => {
     "dislikes": 0,
   }
 
- const tuitClickHandler = () => {
+ const tuitClickHandler = (whatsHappening) => {
    console.log(whatsHappening);
    const newTuit = {
     tuit: whatsHappening,
