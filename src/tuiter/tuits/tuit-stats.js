@@ -13,22 +13,6 @@ const TuitStats = (
     }) => {
     const dispatch = useDispatch();
 
-    const likedHandler = () => {
-        if (tuits.liked) {
-            dispatch(updateTuitThunk({
-                ...tuits,
-                liked: false,
-                likes: tuits.likes - 1
-            }))
-        } else {
-            dispatch(updateTuitThunk({
-                ...tuits,
-                liked: true,
-                likes: tuits.likes + 1
-            }))}
-    }
-    }
-
     return (
         <div className="d-flex justify-content-between me-5 mt-2">
             <div><a href="tuits-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{tuit.replies}</span></div> 
