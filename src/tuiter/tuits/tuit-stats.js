@@ -13,6 +13,22 @@ const TuitStats = (
     }) => {
     const dispatch = useDispatch();
 
+    const likedHandler = () => {
+        if (tuits.liked) {
+            dispatch(updateTuitThunk({
+                ...tuits,
+                liked: false,
+                likes: tuits.likes - 1
+            }))
+        } else {
+            dispatch(updateTuitThunk({
+                ...tuits,
+                liked: true,
+                likes: tuits.likes + 1
+            }))}
+    }
+    }
+
     return (
         <div className="d-flex justify-content-between me-5 mt-2">
             <div><a href="tuits-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{tuit.replies}</span></div> 
@@ -21,7 +37,8 @@ const TuitStats = (
                 {tuit.liked ?
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...tuit,
-                        likes: tuit.likes + 1
+                        liked: false,
+                        likes: tuit.likes - 1
                     }))}
                         className="bi bi-heart-fill text-danger me-2"></i>
                     :
@@ -37,7 +54,8 @@ const TuitStats = (
                 {tuit.disliked ?
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...tuit,
-                        dislikes: tuit.dislikes + 1
+                        disliked: false,
+                        dislikes: tuit.dislikes - 1
                     }))}
                         className="bi bi-hand-thumbs-down-fill me-2"></i>
                     :

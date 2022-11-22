@@ -16,6 +16,7 @@ const WhatsHappening = () => {
     ...currentUser,
     "topic": "Space",
     "time": "2h",
+    "title": "NASA annoucement",
     "replies": 0,
     "retuits": 0,
     "liked": false,
